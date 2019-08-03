@@ -1,0 +1,115 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(45deg, #f22613, #f89406, #26a65b, #5868ec, #f54e80, #f7ca18, #d2527f);
+    background-size: 500% 500%;
+    -webkit-animation: ignielGradient 12s ease infinite;
+    -moz-animation: ignielGradient 12s ease infinite;
+    animation: ignielGradient 12s ease infinite;
+     color:#fff;
+    -webkit-text-stroke: 5px rgba(255,255,255,.01);
+    -webkit-background-clip: text;
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+@-webkit-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    @-moz-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    @keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.container{
+    width: 80%;
+    border: 7px solid black;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 4px rgba(0,0,0,0.5);
+}
+.layar{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.layar input{
+    width: 82%;
+    height: 37px;
+    border-radius: 10px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 2px;
+    text-align: center;
+    font-size: 1.1em;
+    background: white;
+    color: black;
+}
+.kotak-angka{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kotak-angka .angka{
+    text-align: center;
+    width: calc(32% - 30px);
+    height: 37px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.kotak-angka .bawah{
+    flex-basis: calc(50% - 36px);
+}
+.kotak-op{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.kotak-op .op{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    height: 37px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    color: white;
+}
+.angka:active, .op:active{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5) inset;
+}
